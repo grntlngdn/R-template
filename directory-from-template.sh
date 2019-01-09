@@ -30,6 +30,7 @@ then
    cp -r $TEMP .
    mv -T template $PROJECT
    cd $PROJECT
+   mv template.Rproj $PROJECT.Rproj
    for FILE in $FILES
    do
       sed -i "s/\[Subject\]/$SUBJECT/g" $FILE
